@@ -30,7 +30,8 @@ The analysis of the election shows that:
 - The winner of the election was:
     - Diana DeGette, who received 73.8% of the vote and 272,892 total votes.
 
-Below is how these results appeared in my terminal: ![election_results_terminal](Resources/election_results_terminal.png)
+These results from my terminal view are shown below: 
+![election_results_terminal](Resources/election_results_terminal.png)
 
 ## Election-Audit Summary
 While this specific script was only used for this congressional district in Colorado, it can be applied to adapt for many other similar scenarios. As long as the we have data that includes counties in the 2nd column and the candidate that was voted for in the 3rd column, then this script should seamlessly output results for any district. We can also modify this script to include different types of data for this election or other elections. For example, if we wanted to know which candidate received the most votes from men or women, we could add a column from the voter data that includes the gender from each ballot ID. If we wanted to expand this data for a Colorado statewide election, that could also be done fairly easily. If you took a Colorado gubernatorial race and used data from all Colorado voters, this data would still output the total votes, votes by county, and the results/winner of the election. For this code to work, the counties and candidates would still need to remain in their respective columns. The only difference is that the output would yield total votes and many more counties listed. This code could also work for a mayoral race. While there wouldn't be separate counties to compare, you could take the NYC mayoral race and replace the "counties" with "boroughs". In this example, we would modify the script to output "Votes by Borough" in the election_results.txt file. As long as the boroughs are listed in the 2nd column, then the results should look similar.
